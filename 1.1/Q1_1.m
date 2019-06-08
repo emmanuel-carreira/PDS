@@ -31,6 +31,7 @@ h = hd.*w_kai;
 %Obter resposta em frequência do filtro
 [db, mag, pha, w] = freqz_m(h, [1]);
 
+%Exibir magnitude do filtro
 figure('Name', 'Filtro por janela de kaiser');
 subplot(2,2,1);
 plot(mag);
