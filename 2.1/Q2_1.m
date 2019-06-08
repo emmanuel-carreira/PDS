@@ -49,4 +49,3 @@ title('Passa baixa pixel do meio');
 %Plotar imagem original a fim de compará-la com as imagens filtradas
 figure('Name', 'Original');
 imshow(img_original);
-title('Original');
