@@ -12,8 +12,8 @@ clc;
 %Determinar o maior valor de pixel verde
 max_green = max(img,[],3); 
 
-%Determinar quais pixels da imagem não possuem o valor máximo
-filter = uint8( img(:,:,2) ~= max_green );
+%Determinar quais pixels possuem valor em G (green) pequeno
+filter = uint8( img(:,:,2) < max_green-15 );
 
 %Convoluir imagem com o filtro
 filtered_img = img.*filter;
