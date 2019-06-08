@@ -46,18 +46,17 @@ ylabel('w[n]');
 xlabel('n');
 title('Janela de Kaiser');
 
-%Exibir a resposta ao impulso do filtro
+%Exibir a resposta ao impu
 subplot(2,2,3);
 stem(h);
 ylabel('h[n]');
 xlabel('n');
 title('Resposta ao impulso atual');
 
-%Exibir a magnitude em dB 
 subplot(2,2,4);
 plot(db);
 ylabel('dB');
-xlabel('frequencia em pi unidades');
+xlabel('');
 xlim([0 500])
 set(gca,'XTickLabel',0:0.2:1)
 title('Magnitude em dB');

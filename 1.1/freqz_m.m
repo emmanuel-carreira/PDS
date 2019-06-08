@@ -1,4 +1,4 @@
-%OBS: função freqz_m copiada porque não a possuo no trial do Matlab
+%OBS: função freqz_m copiada
 
 function [db,mag,pha,grd,w] = freqz_m(b,a);
 
