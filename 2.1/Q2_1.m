@@ -28,24 +28,25 @@ img_conv_kernel = conv2(img_double, conv_kernel);
 %Passar filtro passa baixa do pixel do meio na imagem com ringing
 img_lowpass = conv2(img_double, lowpass_filter);
 
-%Plotar imagem com ringing e as imagens com filtro
+%Exibir imagens original, com ringing e as com filtro
+
 figure('Name', 'Comparação');
-subplot(2,2,1);
+subplot(2,3,1);
+imshow(img_original);
+title('Imagem original');
+
+subplot(2,3,2);
 imshow(img_rings);
 title('Com ringing');
 
-subplot(2,2,2);
+subplot(2,3,3);
 imshow(img_gauss);
 title('Filtro Gaussiano');
 
-subplot(2,2,3);
+subplot(2,3,4);
 imshow(img_conv_kernel);
 title('Passa baixa uniforme 1/9');
 
-subplot(2,2,4);
+subplot(2,3,5);
 imshow(img_lowpass);
 title('Passa baixa pixel do meio');
-
-%Plotar imagem original a fim de compará-la com as imagens filtradas
-figure('Name', 'Original');
-imshow(img_original);
