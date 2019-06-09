@@ -22,6 +22,8 @@ cc = bwconncomp(img_edges, 8);
 
 %Determinar a quantidade de texturas (nº de componentes conexas)
 textures = cc.NumObjects;
+disp(textures);
+
 
 %Exibir imagens original, suavizada e segmentada
 figure(1);
