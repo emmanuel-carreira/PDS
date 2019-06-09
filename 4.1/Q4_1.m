@@ -16,8 +16,6 @@ stop_band = 1010/f_nyquist;
 passband_ripple =   1;       
 stopband_ripple = 150;       
 
-%Filtro de chebyshev tipo II
-
 %Determinar ordem do filtro
 [order,stop_band] = cheb2ord(pass_band,stop_band,passband_ripple,stopband_ripple); 
 
